@@ -1,0 +1,14 @@
+{
+  "pages":[
+   
+    "pages/index/index",
+    "pages/index/details/details",
+    "pages/index/userdetalis/userdetalis"
+  ],
+  "window":{
+    "backgroundTextStyle":"#fff",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "node社区小程序",
+    "navigationBarTextStyle":"#fff"
+  }
+}

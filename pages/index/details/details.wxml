@@ -1,0 +1,24 @@
+<import src="../../../wxParse/wxParse.wxml"/>
+<view class="contertian">
+    <view class="contsText">
+       <template is="wxParse" data="{{wxParseData:content.nodes}}"/> 
+    </view>
+    <view class='contItems'>
+        <view>是否收藏: {{itemDetails.is_collect}}</view>
+        <view>点击数: {{itemDetails.visit_count}}</view> 
+        <view>回复数: {{itemDetails.reply_count}}</view> 
+    </view>  
+
+   <view class='backs'>回复相关</view>
+
+   <block wx:for="{{itemDetails.replies}}" wx:for-item="items" wx:for-index="idxs">
+        <view class='contPing'>  
+            <view bindtap='findUserDetails' data-username = "{{items.author.loginname}}">
+                <view class='usertitle'>评论：查看{{items.author.loginname}}详细信息</view>
+            </view>  
+            <view class='contstent'>评论内容：{{items.content}}</view>
+        </view>
+        
+   </block>
+</view>
+

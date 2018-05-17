@@ -1,0 +1,16 @@
+.contItem {
+  flex-direction: column;
+  display: flex;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+  padding:10px;
+}
+.contTop{flex-direction: row;   display: flex;}
+.imgs{ width: 50px; height: 50px; overflow: hidden; margin: 10px;}
+.titles{font-weight: bolder; line-height:40rpx; padding-top: 10px;}
+.contTimes{flex-direction: row; display: flex;  justify-content: space-between; } 
+
+
+

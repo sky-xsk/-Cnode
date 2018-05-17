@@ -1,0 +1,21 @@
+<template name="tipicsItem">
+  <view class='contItem'>
+    <view class='contTop'>
+      <view class='imgs'>
+        <image src="{{author.avatar_url}}" width="50"></image>
+      </view>
+      <view class='titles'>{{title}}</view>
+    </view>
+
+    <view class='contTimes'>
+      <view>发布时间：{{create_at}}</view>
+      <view class='author'>作者:{{author.loginname}}</view>
+    </view>
+    <view class='contTimes'>
+      <text wx:if="{{good == true}}">精选好帖</text>
+      <text>点击数：{{visit_count}}次</text>
+      <text>回复数：{{reply_count}}次</text>
+    </view>
+
+  </view>
+</template>

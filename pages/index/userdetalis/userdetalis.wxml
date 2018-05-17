@@ -1,0 +1,31 @@
+<view class='details'>
+  <view class='username'>
+    <view class='imgs'>
+      <image src="{{users.avatar_url}}"></image>
+    </view>
+    <view class='user'>用户名：{{users.loginname}}</view>
+    <view class='user'>总积分：{{users.score}}分</view>
+  </view>
+
+  <view class='lists'>
+    <view>github：{{users.githubUsername}}</view>
+    <view>注册时间：{{users.create_at}}</view>
+  </view>
+
+  <view class='lastTopic'>最近创建的话题</view>
+  <block wx:for="{{users.recent_topics}}" wx:for-index="idx" wx:for-item="itemName">
+    <view class='lastcont'>
+      <view class='titles'>{{itemName.title}}</view>
+      <view class='times'>{{itemName.last_reply_at}}</view>
+    </view>
+  </block>
+
+  <view class='lastTopic' style='margin-top:30px;'>最近参与的话题</view>
+  <block wx:for="{{users.recent_replies}}" wx:for-index="idx" wx:for-item="itemName">
+    <view class='lastcont'>
+      <view class='titles'>{{itemName.title}}</view>
+      <view class='times'>{{itemName.last_reply_at}}</view>
+    </view>
+  </block>
+
+</view>

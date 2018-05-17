@@ -1,0 +1,8 @@
+.contertian{padding: 10px; display: flex; flex-direction: column;}
+.contsText{font-size: 14px; line-height: 24px; margin-bottom: 10px;}
+.contItems{ display: flex; font-size: 14px; }
+.contItems view{flex: 1; text-align: center; color: #1c2438;}
+.backs{ margin-top: 20rpx; text-align: center; font-size: 16px; background: #2b85e4; padding: 5px 0 5px 0; color: #fff;}
+.contPing{font-size: 14px;}
+.contstent{padding: 5px; border: 1px solid #ccc; line-height: 24px; font-size: 12px;}
+.usertitle{font-weight: bolder; padding: 5px 0 5px 0; color: #ed3f14; line-height: 24px;}

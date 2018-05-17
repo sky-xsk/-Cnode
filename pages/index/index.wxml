@@ -1,0 +1,8 @@
+<import src="./component/Items.wxml" />
+<view class="blocks">
+  <block wx:for="{{topicsArrs}}" wx:for-item="item" wx:for-index="idx">
+    <view bindtap='tabTitles' data-Iditem="{{item.id}}">
+      <template is="tipicsItem" data="{{...item}}"></template>
+    </view>
+  </block>
+</view>
