@@ -1,6 +1,6 @@
 @import "/wxParse/wxParse.wxss";
 @import "/pages/index/component/Items.wxss";
-.blocks{margin-bottom: 40px; font-size: 14px;}
+.blocks{ font-size: 14px;}
 page{
   background: #ededed;
 }

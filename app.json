@@ -1,6 +1,6 @@
 {
   "pages":[
-   
+    "pages/first/first",
     "pages/index/index",
     "pages/index/details/details",
     "pages/index/userdetalis/userdetalis"
@@ -10,5 +10,27 @@
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "node社区小程序",
     "navigationBarTextStyle":"#fff"
+  },
+  
+  "tabBar": {
+    "color": "#878787",
+    "selectedColor": "#19be6b",
+    "borderStyle": "black",
+    "backgroundColor": "#f8f8f9",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "主页"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "发布"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的"
+      }
+    ]
   }
+ 
 }

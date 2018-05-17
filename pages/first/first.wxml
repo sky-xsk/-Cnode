@@ -1,0 +1,7 @@
+<view class='container'>
+    <view class='conts'>
+          <image class='imgs' src="/imgs/logo_flat.png" mode="aspectFit"></image>
+    </view>
+    <text class='texts'>Don't Be Same！Be Better！</text>
+    <button class='btns' bindtap='btns' hover-class="btnsadd">点击进入</button>
+</view> 
