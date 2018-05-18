@@ -11,7 +11,6 @@ Page({
    
   },
   btns: function(){
-    console.log(0)
     wx.switchTab({
       url: '../index/index',
     })

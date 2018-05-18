@@ -13,6 +13,9 @@ Page({
 
   getTopics: function (url) {
     var _this = this;
+    wx.showLoading({
+      title: '数据加载中...',
+    })
     wx.request({
       url: url,
       method: 'GET',
@@ -21,13 +24,21 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
+        _this.data.topicsArrs = [];
         var arrs = res.data.data;
         if (res.statusCode == 200){
           _this.setData({ topicsArrs: arrs });
         };
+        wx.hideLoading();
+      },
+      fail:function(res){
+        wx.showLoading({
+          title: '数据加载失败！',
+        })
       }
     })
   },
+  
   //跳转 
   tabTitles:function(event){
     var Ids = event.currentTarget.dataset.iditem;
@@ -35,6 +46,9 @@ Page({
       url: "details/details?id=" + Ids,
     })
   },
-
-
+  //下拉刷新
+  onPullDownRefresh : function(){
+    var url = "https://cnodejs.org/api/v1/topics";
+    this.getTopics(url);
+  },
 })

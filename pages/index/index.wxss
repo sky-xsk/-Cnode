@@ -1,6 +1,7 @@
 @import "/wxParse/wxParse.wxss";
 @import "/pages/index/component/Items.wxss";
 .blocks{ font-size: 14px;}
+
 page{
   background: #ededed;
 }
