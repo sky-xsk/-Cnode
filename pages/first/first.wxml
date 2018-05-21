@@ -1,7 +1,31 @@
 <view class='container'>
-    <view class='conts'>
-          <image class='imgs' src="/imgs/logo_flat.png" mode="aspectFit"></image>
+  <view class='conts'>
+    <image class='imgs' src="/imgs/logo_flat.png" mode="aspectFit"></image>
+  </view>
+  <text class='texts'>Don't Be Same！Be Better！</text>
+  
+   <view>
+        <form bindsubmit="formSubmit">
+          <view class="section">
+            <input name="input"  class='inputs' placeholder="输入accessToken" />
+          </view>
+          <view class="btn-area">
+            <button class='btns' formType="submit" hover-class="btnsadd">验证accessToken登录</button>
+          </view>
+        </form>
+  </view>
+
+  <view class='access'>
+     <view>accessToken提示测试用(请勿做它用)：</view>
+     <text>d2b42e8f-0207-4bd5-a3f1-fa8d1c37e4d6</text>
+     <text class='copys_one' bindtap='oneCopy'>一键复制</text>
+  </view>
+  
+
+  <view class="weui-footer weui-footer_fixed-bottom">
+    <view class="weui-footer__links">
+      <navigator class="weui-footer__link">Start我：https://github.com/sky-xsk</navigator>
     </view>
-    <text class='texts'>Don't Be Same！Be Better！</text>
-    <button class='btns' bindtap='btns' hover-class="btnsadd">点击进入</button>
-</view> 
+    <view class="weui-footer__text">Copyright © 2018 xsk</view>
+  </view>
+</view>

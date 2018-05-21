@@ -5,4 +5,6 @@ page{background: #1c2438;}
 .btns{margin-top: 40rpx; font-size: 16px;  background:#1c2438; color: #fff; 
 width: 400rpx; border-radius:40rpx; border: 0.5rpx solid #fff; }
 .btnsadd{background:#495060; color: #fff;}
-
+.access{font-size: 14px; color: #495060; text-align: center; margin-top: 30rpx;}
+.inputs{width: 500rpx;margin-top: 30rpx; color:#495060; font-size: 14px; border: 1px solid #495060; padding:5px; border-radius:4px;}
+.copys_one{display: block;}
