@@ -1,0 +1,24 @@
+<view class='viewContens'>
+  <view>
+  <view class='putEg'>
+    <text >此页面仅仅用于测试接口所做，不考虑用户体验以及交互！</text>
+  </view>
+   
+    <view class='forms'>
+      <form bindsubmit="formSubmit">
+        <view class="section">
+          <view class="section__title">标题</view>
+          <input name="input" placeholder="请输入标题" />
+        </view>
+        <view class="section">
+          <view class="section__title">内容</view>
+          <textarea name="inputs" placeholder="请输入正文"></textarea>
+        </view>
+        <view class="btn-area">
+          <button formType="submit">发布主题</button>
+        </view>
+        <view  class='putEg putEgadd'><text>发布成功：到https://cnodejs.org/?tab=dev查看</text></view>
+      </form>
+    </view>
+  </view>
+</view>

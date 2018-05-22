@@ -1,7 +1,9 @@
 {
   "pages":[
-    "pages/first/first",
+    "pages/my/my",
+    "pages/puts/puts",
     "pages/index/index",
+    "pages/first/first",
     "pages/index/details/details",
     "pages/index/userdetalis/userdetalis"
   ],
@@ -23,7 +25,7 @@
         "text": "主页"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/puts/puts",
         "text": "发布"
       },
       {

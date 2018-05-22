@@ -1,6 +1,6 @@
 //index.js
 //获取应用实例
-const app = getApp()
+const app = getApp();
 Page({
   data: {
     users: {},
@@ -32,5 +32,12 @@ Page({
     })
   },
 
+  //参与主题
+  lastTopic(event){
+    var Ids = event.currentTarget.dataset.topicid;
+    wx.navigateTo({
+       url: "../details/details?id=" + Ids,
+    })
+  }
 
 })

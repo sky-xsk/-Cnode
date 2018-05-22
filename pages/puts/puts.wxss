@@ -1,0 +1,9 @@
+.viewContens{padding: 10px;}
+.putEg{font-size: 12px; text-align: center; color: #fff; background: #ff9900; padding: 5px; border-radius:10rpx;  }
+.section{ border-bottom: 1px solid #e9eaec; margin-bottom:30rpx;}
+.section view{font-size:18px;}
+.forms{margin-top: 20px;}
+.section input, .section textarea {font-size: 12px;}
+.btn-area button{ width: 640rpx; border-radius:40rpx; background: #1c2438; color: #fff; }
+.putEgadd{background: #19be6b; margin-top: 30rpx;}
+

@@ -14,7 +14,7 @@
 
   <view class='lastTopic'>最近创建的话题</view>
   <block wx:for="{{users.recent_topics}}" wx:for-index="idx" wx:for-item="itemName">
-    <view class='lastcont'>
+    <view class='lastcont' bindtap='lastTopic' data-topicId = "{{itemName.id}}" >
       <view class='titles'>{{itemName.title}}</view>
       <view class='times'>{{itemName.last_reply_at}}</view>
     </view>
@@ -22,7 +22,7 @@
 
   <view class='lastTopic' style='margin-top:30px;'>最近参与的话题</view>
   <block wx:for="{{users.recent_replies}}" wx:for-index="idx" wx:for-item="itemName">
-    <view class='lastcont'>
+    <view class='lastcont' bindtap='lastTopic' data-topicId = "{{itemName.id}}">
       <view class='titles'>{{itemName.title}}</view>
       <view class='times'>{{itemName.last_reply_at}}</view>
     </view>
