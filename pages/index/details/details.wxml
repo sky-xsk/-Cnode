@@ -10,6 +10,13 @@
     </view>  
 
    <view class='backs'>回复相关</view>
+
+   <view>
+        <button class='relyTest' bindtap="relayTest">点击进行评论测试</button> 
+        <text class='replyText'>评论后，可以到官网查看，不要随意评论，影响他人的浏览！</text>
+        <text class='replyText'>评论内容已经定死内容为 “着实的厉害” ，点击按钮自动评论！</text>
+   </view> 
+
    <block wx:for="{{itemDetails.replies}}" wx:for-item="items" wx:for-index="idxs">
         <view class='contPing'>  
             <view bindtap='findUserDetails' data-username = "{{items.author.loginname}}">

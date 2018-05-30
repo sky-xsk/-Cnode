@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/index/index",
     "pages/my/my",
     "pages/puts/puts",
-    "pages/index/index",
     "pages/first/first",
     "pages/index/details/details",
     "pages/index/userdetalis/userdetalis"
@@ -29,7 +29,7 @@
         "text": "发布"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/my/my",
         "text": "我的"
       }
     ]

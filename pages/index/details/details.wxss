@@ -6,3 +6,5 @@
 .contPing{font-size: 14px;}
 .contstent{padding: 5px; border: 1px solid #ccc; line-height: 24px; font-size: 12px;}
 .usertitle{font-weight: bolder; padding: 5px 0 5px 0; color: #ed3f14; line-height: 24px;}
+.relyTest{margin-top: 20rpx; color: #fff; background: #ed3f14;}
+.replyText{ font-size: 14px; line-height: 24px; color: green}
