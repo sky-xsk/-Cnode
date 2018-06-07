@@ -4,7 +4,10 @@
        <template is="wxParse" data="{{wxParseData:content.nodes}}"/> 
     </view>
     <view class='contItems'>
-        <view>是否收藏: {{itemDetails.is_collect}}</view>
+        <view>是否收藏: 
+           <text wx:if="{{itemDetails.is_collect}}">未收藏</text>
+           <text wx:else>已收藏</text>
+        </view>
         <view>点击数: {{itemDetails.visit_count}}</view> 
         <view>回复数: {{itemDetails.reply_count}}</view> 
     </view>  

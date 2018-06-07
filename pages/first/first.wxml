@@ -23,6 +23,7 @@
   
 
   <view class="weui-footer weui-footer_fixed-bottom">
+    <text style="color:#F56C6C">项目还有一些函数未封装，组件未抽取，后期会继续完善！</text>
     <view class="weui-footer__links">
       <navigator class="weui-footer__link">Start我：https://github.com/sky-xsk</navigator>
     </view>

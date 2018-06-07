@@ -1,3 +1,18 @@
 <view class='viewContens'>
-    <text>暂无可读信息</text>
+    <view class='news'>
+        <view>消息列表 / <text>共{{meeages.length}}条</text></view>
+        <view>未读消息{{counts}}条</view>
+    </view>
+    <view class='conts'>
+        <block wx:for="{{meeages}}" wx:for-index="idx" wx:for-item="itemName"> 
+             <view class='contItem'>
+                  <view><text>标题：</text>{{itemName.topic.title}}</view>
+                  <view><text>最后回复时间：</text>{{itemName.topic.last_reply_at}}</view>
+                  <view><text>作者：</text>{{itemName.author.loginname}}</view>
+                  <view wx-if="{{itemName.has_read}}"><text>状态：</text>已读</view>
+                  <view wx:else><text>状态：</text>未读</view>
+             </view> 
+        </block>
+        <text style="color:#E6A23C">css样式不做精修，只写调用api的用法，见谅！消息的详情页面写法，这里不在写了，请参见主题列表页！</text>
+    </view>
 </view>

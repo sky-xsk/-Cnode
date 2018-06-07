@@ -1,3 +1,8 @@
 .viewContens{padding: 10px;}
-
-
+.news{font-size: 14px; background: #E4E7ED; overflow: hidden; padding: 5px;}
+.news view{float: left;}
+.news view:nth-child(2){ float: right; color: #F56C6C;}
+.news view:nth-child(1) text{ float: right; color: #F56C6C;}
+.conts{ font-size: 14px; margin-top: 20rpx; }
+.contItem{background: #E4E7ED; padding: 10px; margin-bottom: 20rpx; color: #909399;}
+.contItem text{color: #67C23A; font-weight: bolder;}
